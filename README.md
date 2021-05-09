@@ -7,6 +7,7 @@ TP 1. Repaso matrices y vectores
 Vectores
 1.Hacer una función que reciba como parámetros un vector de enteros y un número entero que indica la cantidad de componentes del vector, 
 y que devuelva el valor mínimo contenido en ese vector.
+
 2.Hacer una función que reciba como parámetros un vector de enteros y un número entero que indica la cantidad de componentes del vector, 
 y que devuelva el valor máximo contenido en ese vector.
 3.Hacer una función que reciba como parámetros un vector de enteros y un número entero que indica la cantidad de componentes del vector, 
