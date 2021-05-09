@@ -57,6 +57,7 @@ void func_chargeVector(int *v, int tam);
 //--Matrices inits and loads
 int func_matrixCreation();
 void func_chargeMatrix(int m[10][10], int f, int c);
+void func_mostrarMatrix(int m[10][10], int f, int c);
 //EXECUTION OF OPTIONS AND RESOLUTIONS
 //--Vector related
 int func_exerciseOne(int *v, int tam);
@@ -73,7 +74,8 @@ int func_matrixExerciseOne(int **m, int r, int c, int maxinfile);
 
 //--Display SUB MENU VECTORES
 void display_subMenuVectores(){
-	system("clear");
+	//system("clear");
+	system("cls");
 	cout<<"MAIN MENU"<<endl;
 	cout<<"OPCION A "<<endl;
 	cout<<"OPCION B"<<endl;
@@ -81,14 +83,15 @@ void display_subMenuVectores(){
 	cout<<"OPCION D"<<endl;
 	cout<<"OPCION E"<<endl;
 	cout<<"OPCION F"<<endl;
-	cout<<"OPCION G"<<endl;	
+	cout<<"OPCION G"<<endl;
 	cout<<"OPCION S - Salir"<<endl;
 	cout<<"Ingrese una opcion:"<<endl;
 }
 
 //--Display SUB MENU MATRICES
 void display_subMenuMatrixes(){
-	system("clear");
+	//system("clear");
+	system("cls");
 	cout<<"MAIN MENU"<<endl;
 	cout<<"OPCION A "<<endl;
 	cout<<"OPCION B"<<endl;
@@ -103,7 +106,8 @@ void display_subMenuMatrixes(){
 
 //--Display MAIN MENU
 void display_mainMenu(){
-	system("clear");
+	//system("clear");
+	system("cls");
 	cout<<"MAIN MENU"<<endl;
 	cout<<"OPCION A - Vectores"<<endl;
 	cout<<"OPCION B - Matrices"<<endl;
@@ -116,7 +120,8 @@ void interaction_pressEnter(){
 	cout<<"Presione ENTER para continuar"<<endl;
 	cin.ignore();
 	cin.get();
-	system("clear");
+	//system("clear");
+	system("cls");
 }
 
 //--Interfaces
@@ -237,8 +242,10 @@ void interface_matrixOptionA(){
 	cin>>r;
 	cout<<"Ingrese la cantidad de columnas de la matriz:"<<endl;
 	cin>>c;
-	int m[r][c];
-	//func_chargeMatrix(m, r, c);
+	int m[10][10];
+	func_chargeMatrix(m, r, c);
+	func_mostrarMatrix(m, r, c);
+	system("pause");
 }
 
 //--Sub Menu ARRAYS
@@ -300,6 +307,7 @@ void interface_subMenuMatrixes(){
 		switch(opc){
 		case'a':
 		case'A':
+		    interface_matrixOptionA();
 		break;
 		case'b':
 		case'B':
@@ -360,13 +368,25 @@ void func_chargeVector(int *v, int tam){
 //--CHARGE MATRIX - Asks for matrix and it's size and loads it with user inputs
 void func_chargeMatrix(int (*m)[10], int r, int c){
 	for(int i=0; i<r; i++){
-		for(int x=0; i<c; x++){
-			cout<<"Ingrese un número para la fila"<<i<<", columna "<<c<<" del vector:"<<endl;
+		for(int x=0; x<c; x++){
+			cout<<"Ingrese un numero para la fila "<<i<<", columna "<<x<<" del vector: ";
 			int n;
 			cin>>n;
 				*(*(m+i)+x)=n;
 		}
 	}
+}
+//--MOSTRAR MATRIX - Muestra la matriz
+void func_mostrarMatrix(int (*m)[10], int r, int c){
+    int i, j;
+    for(i=0;i<r;i++)
+    {
+        cout<<endl;
+        for(j=0;j<c;j++){
+            cout<<"|"<<m[i][j]<<"|";
+        }
+    }
+    cout<<endl;
 }
 
 //--Resolutions
@@ -376,7 +396,7 @@ int func_exerciseOne(int *v, int tam){
 	int min=99999999;
 	for(int i=0; i<tam; i++){
 		if(*(v+i)<min){
-			min=*(v+i);	
+			min=*(v+i);
 		}
 	}
 return min;
@@ -387,7 +407,7 @@ int func_exerciseTwo(int *v, int tam){
 	int max=-999999;
 	for(int i=0; i<tam; i++){
 		if(*(v+i)>max){
-			max=*(v+i);	
+			max=*(v+i);
 		}
 	}
 return max;
