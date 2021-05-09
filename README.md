@@ -10,26 +10,33 @@ y que devuelva el valor mínimo contenido en ese vector.
 
 2.Hacer una función que reciba como parámetros un vector de enteros y un número entero que indica la cantidad de componentes del vector, 
 y que devuelva el valor máximo contenido en ese vector.
+
 3.Hacer una función que reciba como parámetros un vector de enteros y un número entero que indica la cantidad de componentes del vector, 
 y que devuelva la posición que cupa el valor mínimo contenido en ese vector.
-4.Hacer una función que reciba como parámetros un vector de enteros y un número entero que indica la cantidad de componentes del vector, y que devuelva la posición 
+
+4.Hacer una función que reciba como parámetros un vector de enteros y un número entero que indica la cantidad de componentes del vector, y que devuelva la posición
 que ocupa el valor máximo contenido en ese vector.
-5.Hacer una función que reciba como parámetros un vector de enteros de 10 elementos y un número entero, y que devuelva verdadero si el número recibido existe en el 
-vector, o falso si no existe.
-6.Hacer una función que reciba como parámetros un vector de enteros de 10 elementos y un número entero, y que devuelva la posiciónsi el número recibido existe en el
-vector, o -1si no existe.
+
+5.Hacer una función que reciba como parámetros un vector de enteros de 10 elementos y un número entero, y que devuelva verdadero si el número recibido existe en el vector, o falso si no existe.
+
+6.Hacer una función que reciba como parámetros un vector de enteros de 10 elementos y un número entero, y que devuelva la posiciónsi el número recibido existe en el vector, o -1si no existe.
+
 7.Hacer una función que reciba como parámetros un vector de enteros de 10 elementos y un número entero, y que devuelva la cantidad de veces que el número recibido 
 como parámetro se repite dentro del vector.
 
 Matrices
 1.Hacer una función que reciba como parámetros una matriz de enteros de 10x10 y un número entero (entre 0 y 9), y devuelva el máximo de la fila indicada 
 por el segundo parámetro. 
+
 2.Hacer una función que reciba como parámetros una matriz de enteros de 10x10 yun número entero (entre 0 y 9), y devuelva la posición que ocupa el máximo 
 en la fila indicada por el segundo parámetro. 
+
 3.Hacer una función que reciba como parámetros una matriz de enteros de 10x10 y un número entero (entre 0 y 9), y devuelva la suma de todos los 
 componentes de la columna indicada por el segundo parámetro. 
+
 4.Hacer una función que reciba como parámetros una matriz de enteros de 10x10 y un número entero (entre 0 y 9), y devuelva la cantidad de componentes 
 positivos de la columna indicada por el segundo parámetro. 
+
 5.Hacer una función que reciba como parámetros una matriz de enteros de 10x10, y devuelva la suma de todos los componentes de la matriz. 
 
 Combinados
